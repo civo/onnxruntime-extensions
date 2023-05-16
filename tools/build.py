@@ -27,8 +27,8 @@ class UsageError(Exception):
 
 
 def _check_python_version():
-    if (sys.version_info.major, sys.version_info.minor) < (3, 7):
-        raise UsageError("Invalid Python version. At least Python 3.7 is required. "
+    if (sys.version_info.major, sys.version_info.minor) < (3, 8):
+        raise UsageError("Invalid Python version. At least Python 3.8 is required. "
                          f"Actual Python version: {sys.version}")
 
 
